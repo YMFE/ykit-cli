@@ -2,11 +2,15 @@
 
 'use strict'
 
+global.path = require('path');
+global.fs = require('fs-extra');
 global.log = require('./lib/global-log');
 
 const program = require('commander');
 const commands = {
     install: require('./lib/commands/install')
+    // use
+    // version
 }
 
 Object.keys(commands).map(name => {
