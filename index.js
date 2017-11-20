@@ -2,6 +2,8 @@
 
 'use strict'
 
+global.log = require('./lib/global-log');
+
 const program = require('commander');
 const commands = {
     install: require('./lib/commands/install')
