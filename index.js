@@ -8,9 +8,11 @@ global.log = require('./lib/global-log');
 
 const program = require('commander');
 const commands = {
-    install: require('./lib/commands/install')
+    install: require('./lib/commands/install'),
     // use
     // version
+    // ls
+    ls: require('./lib/commands/ls')
 }
 
 Object.keys(commands).map(name => {
