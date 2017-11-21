@@ -37,3 +37,9 @@ Thumbs.db
 Pods/
 
 package-lock.json
+
+# ykit_modules ignore
+./ykit_modules
+
+# node_modules ignore
+./node_modules
