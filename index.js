@@ -11,15 +11,16 @@ const program = require('commander');
 const commands = {
     install: require('./lib/commands/install'),
     use: require('./lib/commands/use')
-    // version
-    // ls
+    // remote
     // remove
+    // ls
 }
 
 Object.keys(commands).map(name => {
     const commandItem = commands[name];
     program
         .command(commandItem.pattern)
+        .alias(commandItem.alias)
         .description(commandItem.description)
         .action(commandItem.action);
 })
