@@ -11,8 +11,8 @@ const program = require('commander');
 const commands = {
     install: require('./lib/commands/install'),
     uninstall: require('./lib/commands/uninstall'),
-    use: require('./lib/commands/use')
-    // remove
+    use: require('./lib/commands/use'),
+    remote: require('./lib/commands/remote')
     // ls
 }
 
