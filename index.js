@@ -5,7 +5,7 @@
 global.path = require('path');
 global.fs = require('fs-extra');
 global.log = require('./lib/global-log');
-global.versionStore = require('./lib/version-store');
+global.VersionStore = require('./lib/version-store');
 
 const program = require('commander');
 const commands = {
