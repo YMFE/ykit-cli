@@ -2,10 +2,8 @@
 
 'use strict'
 
-global.path = require('path');
-global.fs = require('fs-extra');
-global.log = require('./lib/global-log');
-global.VersionStore = require('./lib/version-store');
+const setup = require('./lib/setup');
+setup();
 
 const program = require('commander');
 const commands = {
