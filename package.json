@@ -17,7 +17,7 @@
     "commander": "^2.11.0",
     "fs-extra": "^4.0.2",
     "json5": "^0.5.1",
-    "readable-stream": "^2.3.3",
-    "requireg": "^0.1.7"
+    "requireg": "^0.1.7",
+    "semver": "^5.4.1"
   }
 }
