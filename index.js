@@ -25,7 +25,4 @@ Object.keys(commands).map(name => {
         .action(commandItem.action);
 })
 
-// FIXME 把这个移到 postinstall 中执行
-require('./lib/add-system-default')();
-
 program.parse(process.argv);
