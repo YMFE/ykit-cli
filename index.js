@@ -12,8 +12,8 @@ const commands = {
     install: require('./lib/commands/install'),
     uninstall: require('./lib/commands/uninstall'),
     use: require('./lib/commands/use'),
-    remote: require('./lib/commands/remote')
-    // ls
+    remote: require('./lib/commands/remote'),
+    ls: require('./lib/commands/ls')
 }
 
 Object.keys(commands).map(name => {
