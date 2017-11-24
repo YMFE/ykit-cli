@@ -25,4 +25,16 @@ Object.keys(commands).map(name => {
         .action(commandItem.action);
 })
 
-program.parse(process.argv);
+program
+    .option('-v, --version', 'check ykit-cli version')
+    .parse(process.argv);
+
+// 没有任何命令和参数
+if(process.argv[2] === '-v' || process.argv[2] === '--version') {
+    console.log(require('./package.json').version);
+}
+
+// 没有任何命令和参数
+if(process.argv.length === 2) {
+    console.log('program', process.argv.length ,program.help());
+}
