@@ -6,6 +6,8 @@ YKit 版本管理工具
 
 ```shell
 sudo npm i ykit-cli -g
+# 或者使用 cnpm 安装
+sudo npm i ykit-cli -g --registry=https://registry.npm.taobao.org
 ```
 
 ## 使用
