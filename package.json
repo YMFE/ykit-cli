@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cnpm-install-version": "^6.0.2",
+    "cnpm-install-version": "^6.1.1",
     "colors": "^1.1.2",
     "commander": "^2.11.0",
     "fs-extra": "^4.0.2",
