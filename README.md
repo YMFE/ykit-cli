@@ -1,22 +1,42 @@
 # ykit-cli
 
-YKit 版本管理工具。
+YKit 版本管理工具
 
-## 如何开发
-
-1. clone
-2. npm i
-
-### 测试特定命令
-
-形式为：
+## 安装
 
 ```shell
-node index.js <command> <params>
+sudo npm i ykit-cli -g
 ```
 
-如：
+## 使用
+
+### 安装并激活某版本
 
 ```shell
-node index.js install 0.1.0
+ykit-cli i latest # 安装最新版本
+ykit-cli i 0.7.2 # 安装特定版本
+ykit-cli i 0.6.0 # 安装特定版本
 ```
+
+### 切换版本
+```shell
+ykit-cli use 0.7.0
+```
+
+### 查看当前已安装版本
+```shell
+ykit-cli ls
+```
+
+### 查看远端版本
+```shell
+ykit-cli remote
+```
+
+### 卸载某版本
+```shell
+ykit-cli uni 0.7.0
+```
+
+## 相关链接
+[YKit](https://github.com/YMFE/ykit)
