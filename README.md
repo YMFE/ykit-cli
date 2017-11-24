@@ -1,17 +1,39 @@
 # ykit-cli
 
-YKit 版本管理工具。
+YKit 版本管理工具
 
-## Installation
+## 安装
 
-```
+```shell
 sudo npm i ykit-cli -g
 ```
 
-## Usage
+## 使用
 
-- install|i [version]      安装某版本，如 ykit-cli install 2.0.0
-- uninstall|uni [version]  卸载某版本，如 ykit-cli uninstall 2.0.0
-- use|u [version]          使用某版本，如 ykit-cli use 2.0.0
-- remote|r                 查看远程可安装版本，如 ykit-cli remote
-- ls|l                     查看已安装 YKit 版本，如 ykit-cli ls
+### 安装和激活某版本
+
+```shell
+ykit-cli i latest # 安装最新版本
+ykit-cli i 0.7.2 # 安装特定版本
+ykit-cli i 0.6.0 # 安装特定版本
+```
+
+### 切换版本
+```shell
+ykit-cli use 0.7.0
+```
+
+### 查看当前已安装版本
+```shell
+ykit-cli ls
+```
+
+### 查看远端版本
+```shell
+ykit-cli remote
+```
+
+### 卸载某版本
+```shell
+ykit-cli uni 0.7.0
+```
