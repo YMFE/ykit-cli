@@ -6,6 +6,9 @@ global.path = require('path');
 global.fs = require('fs-extra');
 global.log = require('./lib/global-log');
 global.VersionStore = require('./lib/version-store');
+global.ykitModulesPath = path.join(process.env.HOME, '.ykit_modules');
+
+fs.ensureDirSync(ykitModulesPath);
 
 const program = require('commander');
 const commands = {
