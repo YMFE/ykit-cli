@@ -15,8 +15,8 @@ sudo npm i ykit-cli -g --registry=https://registry.npm.taobao.org
 ### 安装并激活某版本
 
 ```shell
-ykit-cli i latest # 安装最新版本
-ykit-cli i 0.7.2 # 安装特定版本
+ykit-cli i next # 安装 ykit 最新版本
+ykit-cli i latest # 安装 ykit 稳定版本
 ykit-cli i 0.6.0 # 安装特定版本
 ```
 
@@ -41,4 +41,4 @@ ykit-cli uni 0.7.0
 ```
 
 ## 相关链接
-[YKit](https://github.com/YMFE/ykit)
+[YKit Doc](https://github.com/YMFE/ykit)
